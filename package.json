@@ -1,0 +1,26 @@
+{
+  "name": "factorial-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".src/main.ts",
+  "scripts": {
+    "clean": "rimraf bin",
+    "tsc": "tsc --outDir bin",
+    "exec": "chmod +x ./bin/main.js",
+    "build": "npm run clean && npm run tsc && npm run exec",
+    "tsc:watch": "npm run build && npm run tsc -- -w",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "lint-fix": "npm run lint -- --fix"
+  },
+  "bin": {
+    "factorial": "./bin/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.0.53",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  }
+}
