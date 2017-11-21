@@ -2,7 +2,7 @@
   "name": "ts-factorial-cli",
   "version": "1.0.0",
   "description": "",
-  "main": ".src/main.ts",
+  "main": ".bin/main.js",
   "scripts": {
     "clean": "rimraf bin",
     "tsc": "tsc --outDir bin",
