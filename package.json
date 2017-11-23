@@ -6,8 +6,7 @@
   "scripts": {
     "clean": "rimraf bin",
     "tsc": "tsc --outDir bin",
-    "exec": "chmod +x ./bin/main.js",
-    "build": "npm run clean && npm run tsc && npm run exec",
+    "build": "npm run clean && npm run tsc",
     "tsc:watch": "npm run build && npm run tsc -- -w",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "lint-fix": "npm run lint -- --fix"
